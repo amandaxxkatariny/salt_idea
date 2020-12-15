@@ -40,9 +40,8 @@ export default function HeaderContent() {
             <Link _hover={{ textDecor: 'none' }}>{name}</Link>
           </ListItem>
         ))}
+        <ThemeButton aria-label="Theme" />
       </HStack>
-
-      {/* <ThemeButton aria-label="Theme" /> */}
     </>
   )
 }
