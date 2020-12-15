@@ -27,7 +27,7 @@ class Document extends NextDocument {
           />
         </Head>
         <body>
-          <ColorModeScript initialColorMode="dark" />
+          <ColorModeScript />
           <Main />
           <NextScript />
         </body>
