@@ -44,7 +44,7 @@ export default function Login() {
         borderRadius="md"
         direction="column"
         align="stretch"
-        p={16}
+        p={[8, 12, 12, 16]}
         w="90%"
         maxW={480}
       >
