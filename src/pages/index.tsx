@@ -12,14 +12,17 @@ export default function Login() {
       </Head>
 
       <Header />
-      <Box
+      <Flex
+        justify="center"
         p={8}
-        flex={1}
         pt={24}
+        flex={1}
         bg={useColorModeValue('gray.100', 'gray.900')}
       >
-        <Heading>Home</Heading>
-      </Box>
+        <Flex w="90%" maxW={1120}>
+          <Heading>Home</Heading>
+        </Flex>
+      </Flex>
     </Flex>
   )
 }
