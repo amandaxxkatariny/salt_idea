@@ -5,6 +5,8 @@ import {
   useColorModeValue
 } from '@chakra-ui/react'
 
+import NextImage from 'next/image'
+
 import Drawer from './Drawer'
 import HeaderContent from './HeaderContent'
 
@@ -27,7 +29,7 @@ export default function Header() {
       borderBottom="1px solid"
       borderBottomColor={useColorModeValue('brand.400', 'whiteAlpha.100')}
     >
-      <Image src={'/logo-dark.png'} alt="Salt" h="60%" alignSelf="center" />
+      <NextImage src="/logo-dark.png" alt="Salt" height="42px" width="92px" />
 
       {!isMDBreakingpoin ? <HeaderContent /> : <Drawer />}
     </Flex>
