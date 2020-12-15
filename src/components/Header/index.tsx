@@ -1,9 +1,4 @@
-import {
-  Flex,
-  Image,
-  useBreakpointValue,
-  useColorModeValue
-} from '@chakra-ui/react'
+import { Flex, useBreakpointValue, useColorModeValue } from '@chakra-ui/react'
 
 import NextImage from 'next/image'
 

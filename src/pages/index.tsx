@@ -1,4 +1,4 @@
-import { Box, Flex, Heading, useColorModeValue } from '@chakra-ui/react'
+import { Flex, Heading, useColorModeValue } from '@chakra-ui/react'
 
 import Head from 'next/head'
 

@@ -54,12 +54,12 @@ export default function Drawer() {
                   </ListItem>
                 ))}
               </VStack>
-              <ThemeButton
+              {/* <ThemeButton
                 aria-label="Toggle Theme"
                 position="absolute"
                 bottom="0.5rem"
                 right="0.75rem"
-              />
+              /> */}
             </DrawerBody>
           </DrawerContent>
         </DrawerOverlay>
