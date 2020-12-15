@@ -24,14 +24,16 @@ export default function Header() {
       left={0}
       bg={useColorModeValue('brand.500', 'gray.700')}
       px={8}
-      align="center"
+      justify="center"
       shadow="base"
       borderBottom="1px solid"
       borderBottomColor={useColorModeValue('brand.400', 'whiteAlpha.100')}
     >
-      <NextImage src="/logo-dark.png" alt="Salt" height="42px" width="92px" />
+      <Flex w="100%" maxW={1120} h="full" align="center">
+        <NextImage src="/logo-dark.png" alt="Salt" height="42px" width="92px" />
 
-      {!isMDBreakingpoin ? <HeaderContent /> : <Drawer />}
+        {!isMDBreakingpoin ? <HeaderContent /> : <Drawer />}
+      </Flex>
     </Flex>
   )
 }
