@@ -42,7 +42,7 @@ export default function HeaderContent() {
         ))}
       </HStack>
 
-      {/* <ThemeButton aria-label="Theme Toggle" /> */}
+      <ThemeButton aria-label="Theme" />
     </>
   )
 }

@@ -27,9 +27,9 @@ export default function Header(): JSX.Element {
       <Flex w="100%" maxW={1120} h="full" align="center">
         <NextImage src="/logo-dark.png" alt="Salt" height="42px" width="92px" />
 
-        {/* {!isMDBreakingpoin ? <HeaderContent /> : <Drawer />}
-         */}
-        <Drawer />
+        {!isMDBreakingpoin ? <HeaderContent /> : <Drawer />}
+
+        {/* <Drawer /> */}
       </Flex>
     </Flex>
   )
