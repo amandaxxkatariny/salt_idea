@@ -5,7 +5,7 @@ import NextImage from 'next/image'
 import Drawer from './Drawer'
 import HeaderContent from './HeaderContent'
 
-export default function Header() {
+export default function Header(): JSX.Element {
   const isMDBreakingpoin = useBreakpointValue({ base: true, md: false })
 
   return (
@@ -27,7 +27,9 @@ export default function Header() {
       <Flex w="100%" maxW={1120} h="full" align="center">
         <NextImage src="/logo-dark.png" alt="Salt" height="42px" width="92px" />
 
-        {!isMDBreakingpoin ? <HeaderContent /> : <Drawer />}
+        {/* {!isMDBreakingpoin ? <HeaderContent /> : <Drawer />}
+         */}
+        <Drawer />
       </Flex>
     </Flex>
   )
