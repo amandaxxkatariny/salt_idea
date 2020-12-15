@@ -1,0 +1,75 @@
+{
+    "env": {
+      "browser": true,
+      "es2021": true,
+      "node": true,
+      "jest": true
+    },
+    "extends": [
+      "plugin:react/recommended",
+      "standard",
+      "plugin:@typescript-eslint/recommended",
+      "plugin:react-hooks/recommended",
+      "prettier/@typescript-eslint",
+      "prettier/standard",
+      "prettier/react",
+      "plugin:jest/all"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+      "ecmaFeatures": {
+        "jsx": true
+      },
+      "ecmaVersion": 12,
+      "sourceType": "module"
+    },
+    "plugins": [
+      "react",
+      "@typescript-eslint",
+      "prettier",
+      "react-hooks",
+      "eslint-plugin-import-helpers",
+      "jest"
+    ],
+    "rules": {
+      "no-use-before-define": "off",
+      "@typescript-eslint/no-use-before-define": "error",
+      "prettier/prettier": "error",
+      "space-before-function-paren": "off",
+      "react/prop-types": "off",
+      "react/react-in-jsx-scope": "off",
+      "@typescript-eslint/explicit-module-boundary-types": "off",
+      "jest/prefer-expect-assertions": "off",
+      "jest/lowercase-name": "off",
+      "no-useless-constructor": "off",
+      "camelcase": "off",
+      "multiline-ternary": "off",
+      "no-unused-vars": ["warn", { "argsIgnorePattern": "^_" }],
+      "import-helpers/order-imports": [
+        "warn",
+        {
+            "newlinesBetween": "always", // new line between groups
+            "groups": [
+                "/^react/",
+                "/^@chakra-ui/",
+                "/^next/",
+                "module",
+                "/^~/assets/",
+                "/^~/components/",
+                "/^~/pages/",
+                "/^~/hooks/",
+                "/^~/",
+                ["parent", "sibling", "index"],
+                "/^./data/",
+                "/^./styles/"
+            ],
+            "alphabetize": { "order": "asc", "ignoreCase": true }
+        }
+      ]
+    },
+    "settings": {
+      "react":  {
+        "version":  "detect" // Tells eslint-plugin-react to automatically detect the version of React to use
+      }
+    }
+  }
